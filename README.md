@@ -2,6 +2,19 @@
 
 Awesome legacy system modernization tools.
 
+Flow:
+
+ - analysis
+   - language parser
+ - visualize
+   - relationship
+   - status
+ - plan
+   - tasks
+   - steps
+ - refactor
+ - migration
+
 ## Code
 
 **[Polyglot Code Explorer](https://github.com/kornysietsma/polyglot-code-explorer)** -  Multi-language source code metrics visualization 
