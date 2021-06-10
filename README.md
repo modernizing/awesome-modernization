@@ -140,7 +140,7 @@ Output:
 ### Analysis
 
  - **[Z PL/SQL Analyzer](https://github.com/felipebz/zpa)** The Z PL/SQL Analyzer (or simply ZPA) is a code analyzer for PL/SQL and Oracle SQL code.
- - ** [PLSQLParser](https://github.com/developeron29/PLSQLParser) - A PLSQL parser built using ANTLR 4
+ - **[PLSQLParser](https://github.com/developeron29/PLSQLParser)** - A PLSQL parser built using ANTLR 4
 
 ### Datbase to Struct
 
@@ -191,6 +191,20 @@ type User struct {
 
 ## Visual
 
+
+**[GoCity](https://github.com/rodrigo-brito/gocity)** -  is an implementation of the Code City metaphor for visualizing source code. GoCity represents a Go program as a city, as follows:
+
+ - Folders are districts
+ - Files are buildings
+ - Structs are represented as buildings on the top of their files.
+
+**[Toxicity](https://github.com/softvis/toxicity-reloaded)** -  A rewrite of the original Toxicity chart in Javascript using D3.js 
+
+**[Blast Radius](https://github.com/28mm/blast-radius)** - s is a tool for reasoning about Terraform dependency graphs with interactive visualizations.
+
+Samples:
+
+![Blast Radius](https://raw.githubusercontent.com/28mm/blast-radius/master/doc/blastradius-interactive.png)
 
 **[CodeFlower](https://github.com/fzaninotto/CodeFlower)** -  Source code visualization utility written in JavaScript with d3.js. Does your code look beautiful? 
 
