@@ -4,16 +4,21 @@ Awesome legacy system modernization tools.
 
 Flow:
 
+ - target architecture
  - analysis
    - language parser
  - visualize
    - relationship
    - status
  - plan
+   - tech debt
    - tasks
    - steps
- - refactor
  - migration
+   - decoupling
+   - refactor
+ - guard
+   - arch guard
 
 ## Code
 
