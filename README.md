@@ -128,6 +128,19 @@ Code Smell:  {
 
 ## Version Control
 
+**[Code Maat](https://github.com/adamtornhill/code-maat)** - Code Maat is a command line tool used to mine and analyze data from version-control systems (VCS).
+
+Outputs:
+
+```csv
+statistic,                 value
+number-of-commits,           919
+number-of-entities,          730
+number-of-entities-changed, 3397
+number-of-authors,            79
+```
+
+
 **[git-branches-overview](https://github.com/BenoitZugmeyer/git-branches-overview)**  Visualize branches state compared to a base revision or their upstream. 
 
 Output:
