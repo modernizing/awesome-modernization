@@ -119,6 +119,11 @@ Output:
 
 ## Database
 
+### Analysis
+
+ - **[Z PL/SQL Analyzer](https://github.com/felipebz/zpa)** The Z PL/SQL Analyzer (or simply ZPA) is a code analyzer for PL/SQL and Oracle SQL code.
+ - ** [PLSQLParser](https://github.com/developeron29/PLSQLParser) - A PLSQL parser built using ANTLR 4
+
 ### Datbase to Struct
 
 **[gormt](https://github.com/xxjwxc/gormt)** -  database to golang struct.
