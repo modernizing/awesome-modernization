@@ -10,7 +10,6 @@ Output samples:
 
 ![Polyglot Code](https://blog.korny.info/2020-09-01-polyglot-explorer/main_ui_sample.png)
 
-
 **[Tags 2 UML](https://github.com/ruben2020/tags2uml)** -  Generates UML class diagrams, from source code. Command line tool to convert from a Exuberant-ctags tags file to a UML class diagram, through Graphviz DOT, for all object oriented languages supported by ctags 
 
 Output:
@@ -58,8 +57,34 @@ coco --file-history=true --git-years=3
 Output Samples: [Coco Nginx Reports](https://inherd.org/cases/nginx/)
 
 
-
 ## Frontend
+
+
+### Codemod
+
+
+ - [https://github.com/facebook/jscodeshift](https://github.com/facebook/jscodeshift) jscodeshift is a toolkit for running codemods over multiple JavaScript or TypeScript files. It provides:
+ - [https://github.com/cpojer/js-codemod](https://github.com/cpojer/js-codemod) js-codemod is a Codemod scripts to transform code to next generation JS.
+ - [Vue-Codemod](https://github.com/vuejs/vue-codemod)
+ - [https://github.com/reactjs/react-codemod](https://github.com/reactjs/react-codemod)
+ - [https://github.com/psalaets/vue-jscodeshift-adapter](https://github.com/psalaets/vue-jscodeshift-adapter)
+
+### Parser
+
+
+ - [CSS Tree](https://github.com/csstree/csstree)
+ - [@babel/parser](https://babeljs.io/docs/en/babel-parser)
+
+Benchmarks
+
+| Source | Esprima 4.0.1 | [UglifyJS2](https://github.com/mishoo/UglifyJS2) | [Traceur](https://github.com/google/traceur-compiler) | [Acorn](https://github.com/marijnh/acorn) 8.0.4 | [Shift](https://github.com/shapesecurity/shift-parser-js) | [Shift (no early errors)](https://github.com/shapesecurity/shift-parser-js) |
+| --- | --- | --- | --- | --- | --- | --- |
+| jQuery.Mobile 1.4.2 | 149.6 ±1.8% | 170.7 ±1.2% | 178.2 ±6.0% | 214.4 ±13.0% | 429.5 ±13.5% | 203.9 ±9.6% |
+| Angular 1.2.5 | 125.0 ±2.8% | 138.2 ±2.9% | 134.5 ±2.3% | 113.8 ±2.8% | 251.5 ±1.3% | 147.1 ±1.5% |
+| React 0.13.3 | 127.2 ±1.0% | 158.2 ±1.4% | 160.0 ±0.8% | 128.5 ±2.8% | 310.8 ±2.7% | 182.6 ±2.7% |
+| **Total** | 401.8 ms | 467.0 ms | 472.7 ms | 456.7 ms | 991.9 ms | 533.5 ms |
+
+### Tools
 
 **[Lemonj](https://github.com/twfe/lemonj)** -  一个面向 CSS/LESS/SCSS 的分析、坏味道检查和自动化重构工具。 
 
@@ -94,6 +119,29 @@ Output:
 
 ## Database
 
+### Datbase to Struct
+
+**[gormt](https://github.com/xxjwxc/gormt)** -  database to golang struct.
+
+Usage:
+
+```
+
+Flags:
+  -d, --database string   数据库名
+  -f, --foreign           是否导出外键关联
+  -F, --fun               是否导出函数
+  -g, --gui               是否ui显示模式
+  -h, --help              help for main
+  -H, --host string       数据库地址.(注意-H为大写)
+  -o, --outdir string     输出目录
+  -p, --password string   密码.
+      --port int          端口号 (default 3306)
+  -s, --singular          是否禁用表名复数
+  -b, --table_names string 表名称  
+  -l, --url string        url标签(json,url)
+  -u, --user string       用户名.
+```
 
 **[db2struct](https://github.com/Shelnutt2/db2struct)** - db2struct package produces a usable golang struct from a given database table for use in a `.go` file.
 
