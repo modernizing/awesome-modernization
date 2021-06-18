@@ -155,6 +155,16 @@ Output:
  - **[Z PL/SQL Analyzer](https://github.com/felipebz/zpa)** The Z PL/SQL Analyzer (or simply ZPA) is a code analyzer for PL/SQL and Oracle SQL code.
  - **[PLSQLParser](https://github.com/developeron29/PLSQLParser)** - A PLSQL parser built using ANTLR 4
 
+### Database Optimizer
+
+**[Soar](https://github.com/XiaoMi/soar)** 是一个对 SQL 进行优化和改写的自动化工具。 由小米人工智能与云平台的数据库团队开发与维护。
+
+examples:
+
+```
+echo 'select * from film' | ./soar
+```
+
 ### Datbase to Struct
 
 **[gormt](https://github.com/xxjwxc/gormt)** -  database to golang struct.
