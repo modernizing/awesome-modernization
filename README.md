@@ -167,6 +167,34 @@ echo 'select * from film' | ./soar
 
 ### Datbase to Struct
 
+**[xo](https://github.com/xo/xo)** is a Command line tool to generate idiomatic Go code for SQL databases supporting PostgreSQL, MySQL, SQLite, Oracle, and Microsoft SQL Server 
+
+
+|              | PostgreSQL       | MySQL            | Oracle           | Microsoft SQL Server| SQLite           |
+| ------------ |:----------------:|:----------------:|:----------------:|:-------------------:|:----------------:|
+| Models       |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:   |:white_check_mark:|
+| Primary Keys |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:   |:white_check_mark:|
+| Foreign Keys |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:   |:white_check_mark:|
+| Indexes      |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:   |:white_check_mark:|
+| Stored Procs |:white_check_mark:|:white_check_mark:|                  |                     |                  |
+| ENUM types   |:white_check_mark:|:white_check_mark:|                  |                     |                  |
+| Custom types |:white_check_mark:|                  |                  |                     |                  |
+
+**[usql](https://github.com/xo/usql)** is a universal command-line interface for PostgreSQL, MySQL, Oracle Database, SQLite3, Microsoft SQL Server, and many other databases including NoSQL and non-relational databases!
+
+Usage
+
+```bash
+# connect to a postgres database
+$ usql postgres://booktest@localhost/booktest
+
+# connect to an oracle database
+$ usql oracle://user:pass@host/oracle.sid
+
+# connect to a postgres database and run the commands contained in script.sql
+$ usql pg://localhost/ -f script.sql
+```
+
 **[gormt](https://github.com/xxjwxc/gormt)** -  database to golang struct.
 
 Usage:
