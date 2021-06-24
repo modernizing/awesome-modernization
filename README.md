@@ -229,7 +229,7 @@ db2struct --host localhost -d example.com -t users --package example --struct us
 
 Output
 
-```
+```go
 package example
 
 type User struct {
