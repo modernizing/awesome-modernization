@@ -89,9 +89,15 @@ Redis https://github.com/antirez/redis/
 | polyglot | 20.4 ms ±   1.1 ms |
 
 
-## Frontend Analysis
+## Language Analysis
 
-### Codemod
+### Java
+
+**[DesigniteJava](https://github.com/tushartushar/DesigniteJava)** Detects smells and computes metrics of Java code 
+
+### TypeScript / JavaScript
+
+#### Codemod
 
 
  - [https://github.com/facebook/jscodeshift](https://github.com/facebook/jscodeshift) jscodeshift is a toolkit for running codemods over multiple JavaScript or TypeScript files. It provides:
@@ -100,7 +106,7 @@ Redis https://github.com/antirez/redis/
  - [https://github.com/reactjs/react-codemod](https://github.com/reactjs/react-codemod)
  - [https://github.com/psalaets/vue-jscodeshift-adapter](https://github.com/psalaets/vue-jscodeshift-adapter)
 
-### Parser
+#### CSS
 
 
  - [CSS Tree](https://github.com/csstree/csstree)
@@ -115,7 +121,7 @@ Benchmarks
 | React 0.13.3 | 127.2 ±1.0% | 158.2 ±1.4% | 160.0 ±0.8% | 128.5 ±2.8% | 310.8 ±2.7% | 182.6 ±2.7% |
 | **Total** | 401.8 ms | 467.0 ms | 472.7 ms | 456.7 ms | 991.9 ms | 533.5 ms |
 
-### Tools
+#### Tools
 
 **[Lemonj](https://github.com/twfe/lemonj)** -  一个面向 CSS/LESS/SCSS 的分析、坏味道检查和自动化重构工具。 
 
@@ -152,7 +158,6 @@ number-of-entities,          730
 number-of-entities-changed, 3397
 number-of-authors,            79
 ```
-
 
 **[git-branches-overview](https://github.com/BenoitZugmeyer/git-branches-overview)**  Visualize branches state compared to a base revision or their upstream. 
 
@@ -289,5 +294,15 @@ Output:
 ![Examples](https://raw.githubusercontent.com/fzaninotto/CodeFlower/master/images/faker.png)
 
 
+## Migration Tool
 
+**[Merry](https://github.com/phodal/merry) is a legacy Java system build migration toolbox, support ant to maven, find lost dep in nexus...
+
+Usage:
+
+```
+go get -u github.com/phodal/merry
+merry boom
+merry dupsearch
+```
 
