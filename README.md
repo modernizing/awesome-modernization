@@ -304,7 +304,7 @@ Output:
 
 ## Migration Tool
 
-**[Merry](https://github.com/phodal/merry) is a legacy Java system build migration toolbox, support ant to maven, find lost dep in nexus...
+**[Merry](https://github.com/phodal/merry)** is a legacy Java system build migration toolbox, support ant to maven, find lost dep in nexus...
 
 Usage:
 
@@ -313,4 +313,8 @@ go get -u github.com/phodal/merry
 merry boom
 merry dupsearch
 ```
+
+# Contributing
+
+Your contributions are always welcome! Please submit a pull request or create an issue to add a new framework, library or software to the list. Do not submit a project that hasn’t been updated in the past 6 months or is not awesome.
 
