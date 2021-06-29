@@ -22,29 +22,6 @@ Flow:
 
 ## Code
 
-**[CLOC]
-
- - [SCC](https://github.com/boyter/scc) is a very fast accurate code counter with complexity calculations and COCOMO estimates written in pure Go 
- - [SLOCCount](https://www.dwheeler.com/sloccount/) the original sloc counter
- - [cloc](https://github.com/AlDanial/cloc), inspired by SLOCCount; implemented in Perl for portability
- - [gocloc](https://github.com/hhatto/gocloc) a sloc counter in Go inspired by tokei
- - [loc](https://github.com/cgag/loc) rust implementation similar to tokei but often faster
- - [loccount](https://gitlab.com/esr/loccount) Go implementation written and maintained by ESR
- - [ployglot](https://github.com/vmchale/polyglot) ATS sloc counter
- - [tokei](https://github.com/XAMPPRocky/tokei) fast, accurate and written in rust
-
-performance:
-
-Redis https://github.com/antirez/redis/
-
-| Program | Runtime |
-|---|---|
-| scc | 18.2 ms ±   1.8 ms |
-| scc (no complexity) | 15.0 ms ±   1.6 ms |
-| tokei | 26.9 ms ±   5.7 ms |
-| loc | 47.6 ms ±  23.8 ms |
-| polyglot | 20.4 ms ±   1.1 ms |
-
 **[Polyglot Code Explorer](https://github.com/kornysietsma/polyglot-code-explorer)** -  Multi-language source code metrics visualization 
 
 Output samples:
@@ -85,21 +62,34 @@ Output samples(bs):
 }
 ```
 
-## DevOps
-
-**[Coco](https://github.com/inherd/coco)** -  An effective DevOps analysis and auto-suggest tool。Coco 是一个研发效能分析工具，如团队发展现状（根据架构复杂度及行数变更）、团队演进、历史分析等。生成可视化报告及对应的改进建议。 
-
-Usage:
-
-```
-coco --file-history=true --git-years=3
-```
-
-Output Samples: [Coco Nginx Reports](https://inherd.org/cases/nginx/)
+### Cloc
 
 
-## Frontend
+**[CLOC]**
 
+ - [SCC](https://github.com/boyter/scc) is a very fast accurate code counter with complexity calculations and COCOMO estimates written in pure Go 
+ - [SLOCCount](https://www.dwheeler.com/sloccount/) the original sloc counter
+ - [cloc](https://github.com/AlDanial/cloc), inspired by SLOCCount; implemented in Perl for portability
+ - [gocloc](https://github.com/hhatto/gocloc) a sloc counter in Go inspired by tokei
+ - [loc](https://github.com/cgag/loc) rust implementation similar to tokei but often faster
+ - [loccount](https://gitlab.com/esr/loccount) Go implementation written and maintained by ESR
+ - [ployglot](https://github.com/vmchale/polyglot) ATS sloc counter
+ - [tokei](https://github.com/XAMPPRocky/tokei) fast, accurate and written in rust
+
+performance:
+
+Redis https://github.com/antirez/redis/
+
+| Program | Runtime |
+|---|---|
+| scc | 18.2 ms ±   1.8 ms |
+| scc (no complexity) | 15.0 ms ±   1.6 ms |
+| tokei | 26.9 ms ±   5.7 ms |
+| loc | 47.6 ms ±  23.8 ms |
+| polyglot | 20.4 ms ±   1.1 ms |
+
+
+## Frontend Analysis
 
 ### Codemod
 
@@ -169,6 +159,18 @@ number-of-authors,            79
 Output:
 
 ![Git Branches Overview](https://raw.githubusercontent.com/BenoitZugmeyer/git-branches-overview/master/git-branches-overview.png)
+
+## DevOps
+
+**[Coco](https://github.com/inherd/coco)** -  An effective DevOps analysis and auto-suggest tool。Coco 是一个研发效能分析工具，如团队发展现状（根据架构复杂度及行数变更）、团队演进、历史分析等。生成可视化报告及对应的改进建议。 
+
+Usage:
+
+```
+coco --file-history=true --git-years=3
+```
+
+Output Samples: [Coco Nginx Reports](https://inherd.org/cases/nginx/)
 
 
 ## Database
