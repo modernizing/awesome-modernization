@@ -67,6 +67,9 @@ Redis https://github.com/antirez/redis/
 | loc | 47.6 ms ±  23.8 ms |
 | polyglot | 20.4 ms ±   1.1 ms |
 
+### Code Complexity
+
+[**lizard**](https://github.com/terryyin/lizard)  Lizard is an extensible Cyclomatic Complexity Analyzer for many programming languages including C/C++ (doesn't require all the header files or Java imports).  [Cyclomatic complexity wiki](https://en.wikipedia.org/wiki/Cyclomatic_complexity), [循环复杂度 wiki](https://zh.wikipedia.org/wiki/%E5%BE%AA%E7%92%B0%E8%A4%87%E9%9B%9C%E5%BA%A6).
 
 ## Language Analysis
 
