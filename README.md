@@ -317,6 +317,34 @@ merry boom
 merry dupsearch
 ```
 
+## Architecture test
+
+**.Net**
+
+[NetArchTest](https://github.com/BenMorris/NetArchTest)  A fluent API for .Net that can enforce architectural rules in unit tests. 
+
+```c#
+var result = Types.InCurrentDomain()
+    .That()
+    .ResideInNamespace("NetArchTest.SampleLibrary.Presentation")
+    .ShouldNot()
+    .HaveDependencyOn("NetArchTest.SampleLibrary.Data")
+    .GetResult()
+    .IsSuccessful;
+```
+
+**Java**
+
+[ArchUnit](https://github.com/TNG/ArchUnit)  is a free, simple and extensible library for checking the architecture of your Java code. That is, ArchUnit can check dependencies between packages and classes, layers and slices, check for cyclic dependencies and more. It does so by analyzing given Java bytecode, importing all classes into a Java code structure. ArchUnit's main focus is to automatically test architecture and coding rules, using any plain Java unit testing framework.
+
+```java
+fields().that().haveRawType(Logger.class)
+     .should().bePrivate()
+     .andShould().beStatic()
+     .andShould().beFinal()
+     .because("we agreed on this convention");
+```
+
 # Contributing
 
 Your contributions are always welcome! Please submit a pull request or create an issue to add a new framework, library or software to the list. Do not submit a project that hasn’t been updated in the past 6 months or is not awesome.
