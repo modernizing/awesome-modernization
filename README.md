@@ -284,6 +284,10 @@ type User struct {
 ## Visual
 
 
+**Doxygen** - s the de facto standard tool for generating documentation from annotated C++ sources, but it also supports other popular programming languages such as C, Objective-C, C#, PHP, Java, Python, IDL (Corba, Microsoft, and UNO/OpenOffice flavors), Fortran, VHDL and to some extent D.
+
+samples: ![](https://www.doxygen.nl/manual/examples/diagrams/html/graph_legend.png)
+
 **[GoCity](https://github.com/rodrigo-brito/gocity)** -  is an implementation of the Code City metaphor for visualizing source code. GoCity represents a Go program as a city, as follows:
 
  - Folders are districts
